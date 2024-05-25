@@ -5,6 +5,6 @@
 // x1 -> pixel X
 // x2 -> pixel Y
 
-pintar pixel:
+pintarpixel:
     BL calcular pixel
     

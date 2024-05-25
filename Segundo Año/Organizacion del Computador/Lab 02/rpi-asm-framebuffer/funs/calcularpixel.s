@@ -5,7 +5,7 @@
 // x1 -> pixel X
 // x2 -> pixel Y
 
-calcular pixel:
+calcularpixel:
     mov x0, SCREEN_WIDTH
     mul x0, x0, x2
     add x0, x0, x1
