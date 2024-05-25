@@ -23,8 +23,7 @@ runQEMU: kernel8.img
 	qemu-system-aarch64 -M raspi3b -kernel kernel8.img  -serial stdio -qtest unix:/tmp/qtest.sock,server,nowait
 
 runQEMUtest: kernel8.img
-	qemu-system-aarch64 -s -S -M raspi3b -kernel kernel8.img  -serial stdio -qtest unix:/tmp/qtest.sock,server,nowait
-
+	qemu-system-aarch64 -s -S -M raspi3 -kernel kernel8.img  -serial stdio -qtest unix:/tmp/qtest.sock,server,nowait
 
 runGPIOM: bin/gpiom
 	./bin/gpiom
